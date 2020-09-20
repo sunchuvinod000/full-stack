@@ -24,6 +24,7 @@ const db = mysql.createPool({
 db.getConnection((error,connection) =>{
     try{
         if(connection){
+            console.log("conected")
             connection.release();
         }
 
