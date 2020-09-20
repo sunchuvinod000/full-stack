@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:true}))
 const db = mysql.createPool({
     
     host: "	w1h4cr5sb73o944p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    username: "v6jy421keprwlt2i",
+    user: "v6jy421keprwlt2i",
     password: "n08dhnapybx91p5d",
     database: "pwa1b2dciry6hdqe"
    
