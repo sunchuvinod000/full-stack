@@ -14,10 +14,10 @@ app.use(express.urlencoded({extended:true}))
 //mysql://vnk4ho3mm5249s80:ojegkcj1y4q2n7l9@w1h4cr5sb73o944p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hrk2k6wp4lehs95o
 const db = mysql.createPool({
     
-    host: "w1h4cr5sb73o944p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    user: "vnk4ho3mm5249s80",
-    password: "ojegkcj1y4q2n7l9",
-    database: "	hrk2k6wp4lehs95o"
+    host: "	w1h4cr5sb73o944p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    username: "v6jy421keprwlt2i",
+    password: "n08dhnapybx91p5d",
+    database: "pwa1b2dciry6hdqe"
    
 
 });
@@ -115,9 +115,9 @@ app.delete("/:id", (req,res)=>{
 })
 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static(path.join(__dirname,'../frontend/build')));
+    app.use(express.static(path.join(__dirname,'frontend/build')));
     app.get('*',(req,res)=>{
-        res.sendFile(path.join(__dirname, '../frontend/build','index.html'));
+        res.sendFile(path.join(__dirname, 'frontend/build','index.html'));
     })
 }
 
